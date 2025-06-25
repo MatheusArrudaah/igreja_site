@@ -1,38 +1,58 @@
+/* Fonte padrão */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(90, 84, 72); /* Cor 4 */
     color: white;
     text-align: center;
-    padding: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-header h1 {
-    color: rgb(246, 206, 22); /* Cor 1 */
-    margin-bottom: 10px;
+/* Topo */
+.topo {
+    background-color: rgb(246, 206, 22); /* Cor 1 */
+    padding: 40px 20px;
+    color: rgb(90, 84, 72); /* Cor 4 para contraste */
 }
 
-header p {
-    color: rgb(81, 194, 198); /* Cor 3 */
-    margin-top: 0;
+.topo h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
 }
 
+.versiculo {
+    margin-top: 15px;
+    font-size: 1em;
+    font-style: italic;
+    color: rgb(90, 84, 72);
+}
+
+/* Botão do menu */
 #menu-toggle {
     background-color: rgb(79, 130, 113); /* Cor 2 */
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 8px;
-    margin-top: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+    transition: background-color 0.3s;
 }
 
+#menu-toggle:hover {
+    background-color: rgb(69, 110, 98);
+}
+
+/* Menu */
 #menu {
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 350px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -40,16 +60,18 @@ header p {
 #menu ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 #menu li {
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
 #menu a {
     text-decoration: none;
-    color: rgb(246, 206, 22); /* Cor 1 */
+    color: rgb(81, 194, 198); /* Cor 3 */
     font-weight: bold;
+    font-size: 1em;
 }
 
 .hidden {
