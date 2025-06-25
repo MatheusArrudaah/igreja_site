@@ -7,24 +7,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="topo">
-            <h1>Ministério Nova Geração</h1>
-            <p class="versiculo">"Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei." — Mateus 11:28</p>
-        </div>
-    </header>
-
-    <button id="menu-toggle">☰ MENU</button>
-
-    <nav id="menu" class="hidden">
+    <!-- MENU LATERAL -->
+    <div id="sidebar" class="sidebar hidden">
+        <button id="close-menu">×</button>
         <ul>
-            <li><a href="https://wa.me/5541998372458" target="_blank">📞 Fale Conosco</a></li>
+            <li><a href="https://wa.me/SEUNUMEROAQUI" target="_blank">📞 Fale Conosco</a></li>
             <li><a href="#">🙏 Pedidos de Oração</a></li>
             <li><a href="https://www.instagram.com/_ministerio_nova_geracao_?igsh=OXd3bXFpc2pkdG1p" target="_blank">📷 Instagram</a></li>
             <li><a href="https://www.facebook.com/share/1Bq1hBTDbi/" target="_blank">📘 Facebook</a></li>
             <li><a href="#">✝️ Missões em Minas Gerais</a></li>
         </ul>
-    </nav>
+    </div>
+
+    <!-- BOTÃO MENU -->
+    <button id="open-menu">☰</button>
+
+    <!-- TOPO -->
+    <header class="topo">
+        <h1>Ministério Nova Geração</h1>
+        <p class="versiculo">"Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei." — Mateus 11:28</p>
+        <p class="boas-vindas">Deus abençoe sua vida!</p>
+    </header>
 
     <script src="script.js"></script>
 </body>
