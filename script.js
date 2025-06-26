@@ -6,21 +6,18 @@ const sidebar = document.getElementById('sidebar');
 openMenu.addEventListener('click', (e) => {
   e.stopPropagation();
   sidebar.classList.add('show');
-  sidebar.classList.remove('hidden');
 });
 
 // FECHAR MENU COM BOTÃO
 closeMenu.addEventListener('click', (e) => {
   e.stopPropagation();
   sidebar.classList.remove('show');
-  sidebar.classList.add('hidden');
 });
 
 // FECHAR MENU CLICANDO FORA
 document.addEventListener('click', (e) => {
   if (!sidebar.contains(e.target) && !openMenu.contains(e.target)) {
     sidebar.classList.remove('show');
-    sidebar.classList.add('hidden');
   }
 });
 
