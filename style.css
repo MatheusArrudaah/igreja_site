@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(90, 84, 72); /* Cor 4 - marrom escuro */
-    color: white;
+    background-color: white; /* Fundo branco */
+    color: rgb(90, 84, 72); /* Texto marrom escuro para contraste */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -25,7 +25,7 @@ body {
     margin-top: 20px;
     font-size: 1.1em;
     font-style: italic;
-    color: white;
+    color: rgb(90, 84, 72); /* Marrom escuro */
 }
 
 .boas-vindas {
@@ -41,7 +41,7 @@ body {
     top: 20px;
     left: 20px;
     background-color: rgb(246, 206, 22); /* Cor 1 - amarelo dourado */
-    color: rgb(90, 84, 72); /* Cor 4 - marrom escuro */
+    color: rgb(90, 84, 72); /* Marrom escuro */
     border: none;
     font-size: 24px;
     padding: 10px 15px;
@@ -57,12 +57,13 @@ body {
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: rgb(90, 84, 72); /* Cor 4 - marrom escuro */
+    background-color: white; /* Fundo branco */
     padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    color: rgb(90, 84, 72); /* Texto marrom escuro */
 }
 
 .sidebar.show {
@@ -89,7 +90,7 @@ body {
 #close-menu {
     background: none;
     border: none;
-    color: white;
+    color: rgb(90, 84, 72); /* Marrom escuro */
     font-size: 28px;
     position: absolute;
     top: 10px;
