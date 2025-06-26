@@ -49,7 +49,7 @@ const devocionais = [
     }
 ];
 
-// Escolhe devocional com base no dia da semana
-const dia = new Date().getDay(); // 0 = domingo, 1 = segunda...
+// Mostra o devocional do dia da semana
+const dia = new Date().getDay(); // 0 = domingo
 document.getElementById('versiculo-dia').textContent = devocionais[dia].versiculo;
 document.getElementById('reflexao-dia').textContent = devocionais[dia].reflexao;

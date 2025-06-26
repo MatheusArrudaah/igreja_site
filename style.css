@@ -98,28 +98,48 @@ body {
 }
 
 /* DEVOCIONAL */
-.devocional {
-    background-color: rgb(79, 130, 113); /* Verde escuro */
-    padding: 40px 20px;
-    text-align: center;
-    color: white;
+.devocional-box {
+    background-color: rgb(90, 84, 72); /* Fundo marrom escuro */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.devocional h2 {
-    color: rgb(246, 206, 22); /* Amarelo */
-    font-size: 2em;
-    margin-bottom: 20px;
+.devocional-content {
+    background-color: rgb(81, 194, 198); /* Azul piscina */
+    border-radius: 16px;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+}
+
+.devocional-icon {
+    font-size: 60px;
+    color: rgb(246, 206, 22); /* Amarelo da logo */
+    margin-right: 25px;
+    flex-shrink: 0;
+}
+
+.devocional-texto h2 {
+    font-size: 1.8em;
+    color: rgb(90, 84, 72); /* Marrom escuro */
+    margin-bottom: 15px;
 }
 
 .versiculo-dia {
     font-style: italic;
     font-size: 1.1em;
-    margin-bottom: 15px;
+    color: rgb(90, 84, 72);
+    margin-bottom: 10px;
 }
 
 .reflexao {
-    font-size: 1.05em;
-    max-width: 700px;
-    margin: 0 auto;
-    color: white;
+    font-size: 1em;
+    color: rgb(90, 84, 72);
+    line-height: 1.5em;
 }
