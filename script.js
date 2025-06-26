@@ -16,7 +16,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Devocional popup
 const devocionalBox = document.getElementById('devocional-box');
 const popup = document.getElementById('popup-devocional');
 const closePopup = document.getElementById('close-popup');
@@ -31,7 +30,6 @@ closePopup.addEventListener('click', () => {
     devocionalBox.setAttribute('aria-pressed', 'false');
 });
 
-// Fecha popup se clicar fora do conteúdo
 popup.addEventListener('click', (e) => {
     if (e.target === popup) {
         popup.classList.add('hidden');
