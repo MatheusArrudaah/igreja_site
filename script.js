@@ -1,4 +1,3 @@
-// MENU
 const openMenu = document.getElementById('open-menu');
 const closeMenu = document.getElementById('close-menu');
 const sidebar = document.getElementById('sidebar');
@@ -19,7 +18,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// DEVOCIONAL
+// Devocional
 const devocionalBox = document.getElementById('devocional-box');
 const popup = document.getElementById('popup-devocional');
 const closePopup = document.getElementById('close-popup');
