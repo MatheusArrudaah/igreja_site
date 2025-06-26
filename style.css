@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(90, 84, 72); /* Fundo marrom escuro */
+    background-color: rgb(90, 84, 72); /* Marrom escuro */
     color: white;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: rgb(246, 206, 22); /* Amarelo dourado */
+    background-color: rgb(246, 206, 22); /* Amarelo */
     color: rgb(90, 84, 72); /* Marrom escuro */
     border: none;
     font-size: 24px;
@@ -63,7 +63,6 @@ body {
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
-    color: rgb(81, 194, 198); /* Azul piscina para textos */
 }
 
 .sidebar.show {
@@ -96,4 +95,31 @@ body {
     top: 10px;
     right: 15px;
     cursor: pointer;
+}
+
+/* DEVOCIONAL */
+.devocional {
+    background-color: rgb(79, 130, 113); /* Verde escuro */
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.devocional h2 {
+    color: rgb(246, 206, 22); /* Amarelo */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.versiculo-dia {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.reflexao {
+    font-size: 1.05em;
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
 }

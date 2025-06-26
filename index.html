@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- MENU LATERAL -->
-    <div id="sidebar" class="sidebar">
+    <div id="sidebar" class="sidebar hidden">
         <button id="close-menu">×</button>
         <ul>
             <li><a href="https://wa.me/5541998372458" target="_blank">📞 Fale Conosco</a></li>
@@ -26,8 +26,15 @@
     <header class="topo">
         <h1>Ministério Nova Geração</h1>
         <p class="versiculo">"Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei." — Mateus 11:28</p>
-        <p class="boas-vindas">Deus abençoe sua vida!</p>
+        <p class="boas-vindas"><strong>Deus abençoe sua vida!</strong></p>
     </header>
+
+    <!-- DEVOCIONAL DO DIA -->
+    <section class="devocional" id="devocional">
+        <h2>Devocional do Dia</h2>
+        <p id="versiculo-dia" class="versiculo-dia"></p>
+        <p id="reflexao-dia" class="reflexao"></p>
+    </section>
 
     <script src="script.js"></script>
 </body>
