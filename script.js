@@ -12,7 +12,7 @@ closeMenu.addEventListener('click', () => {
 
 // Fecha o menu se clicar fora dele
 document.addEventListener('click', (e) => {
-    if (!sidebar.contains(e.target) && !openMenu.contains(e.target)) {
+    if (sidebar.classList.contains('show') && !sidebar.contains(e.target) && !openMenu.contains(e.target)) {
         sidebar.classList.remove('show');
     }
 });

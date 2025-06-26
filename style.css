@@ -65,6 +65,10 @@ body {
     transition: transform 0.3s ease;
 }
 
+.sidebar.show {
+    transform: translateX(0);
+}
+
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -82,10 +86,6 @@ body {
     font-weight: bold;
 }
 
-.sidebar.show {
-    transform: translateX(0);
-}
-
 #close-menu {
     background: none;
     border: none;
@@ -95,8 +95,4 @@ body {
     top: 10px;
     right: 15px;
     cursor: pointer;
-}
-
-.hidden {
-    display: none;
 }
