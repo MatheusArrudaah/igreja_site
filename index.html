@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>Ministério Nova Geração</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <title>Ministério Nova Geração</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <!-- MENU LATERAL -->
-    <div id="sidebar" class="sidebar hidden">
-        <button id="close-menu">×</button>
-        <ul>
-            <li><a href="https://wa.me/5541998372458" target="_blank">📞 Fale Conosco</a></li>
-            <li><a href="https://forms.gle/vp6sKbCb38VL24Yp8" target="_blank" rel="noopener noreferrer">🙏 Pedidos de Oração</a></li>
-            <li><a href="https://www.instagram.com/_ministerio_nova_geracao_?igsh=OXd3bXFpc2pkdG1p" target="_blank">📷 Instagram</a></li>
-            <li><a href="https://www.facebook.com/share/1Bq1hBTDbi/" target="_blank">📘 Facebook</a></li>
-            <li><a href="#">✝️ Missões em Minas Gerais</a></li>
-        </ul>
+  <!-- MENU LATERAL -->
+  <div id="sidebar" class="sidebar hidden">
+    <button id="close-menu" aria-label="Fechar menu">×</button>
+    <ul>
+      <li><a href="https://wa.me/5541998372458" target="_blank">📞 Fale Conosco</a></li>
+      <li><a href="https://forms.gle/vp6sKbCb38VL24Yp8" target="_blank" rel="noopener noreferrer">🙏 Pedidos de Oração</a></li>
+      <li><a href="https://www.instagram.com/_ministerio_nova_geracao_?igsh=OXd3bXFpc2pkdG1p" target="_blank">📷 Instagram</a></li>
+      <li><a href="https://www.facebook.com/share/1Bq1hBTDbi/" target="_blank">📘 Facebook</a></li>
+      <li><a href="#">✝️ Missões em Minas Gerais</a></li>
+    </ul>
+  </div>
+
+  <!-- BOTÃO MENU -->
+  <button id="open-menu" aria-label="Abrir menu">☰</button>
+
+  <!-- TOPO -->
+  <header class="topo">
+    <h1>Ministério Nova Geração</h1>
+    <p class="versiculo">"Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei." — Mateus 11:28</p>
+    <p class="boas-vindas">Deus abençoe sua vida!</p>
+  </header>
+
+  <!-- DEVOCIONAL -->
+  <section id="devocional" class="devocional">
+    <div class="devocional-box" id="devocional-box" tabindex="0" role="button" aria-pressed="false">
+      <span class="cruz">✝️</span>
+      <div>
+        <p class="versiculo-curto" id="versiculo-curto">"Tudo posso naquele que me fortalece." — Filipenses 4:13</p>
+        <p class="reflexao-curta" id="reflexao-curta">Você pode enfrentar qualquer coisa com a força que vem do Senhor.</p>
+        <p class="clique-info">Clique aqui para ler mais</p>
+      </div>
     </div>
+  </section>
 
-    <!-- BOTÃO MENU -->
-    <button id="open-menu">☰</button>
-
-    <!-- TOPO -->
-    <header class="topo">
-        <h1>Ministério Nova Geração</h1>
-        <p class="versiculo">"Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei." — Mateus 11:28</p>
-        <p class="boas-vindas">Deus abençoe sua vida!</p>
-    </header>
-
-    <!-- DEVOCIONAL -->
-    <section id="devocional" class="devocional">
-        <div class="devocional-box" id="devocional-box" tabindex="0" role="button" aria-pressed="false">
-            <span class="cruz">✝️</span>
-            <div>
-                <p class="versiculo-curto" id="versiculo-curto">"Tudo posso naquele que me fortalece." — Filipenses 4:13</p>
-                <p class="reflexao-curta" id="reflexao-curta">Você pode enfrentar qualquer coisa com a força que vem do Senhor.</p>
-                <p class="clique-info">Clique aqui para ler mais</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- POP-UP DEVOCIONAL DETALHADO -->
-    <div id="popup-devocional" class="popup hidden" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-desc">
-        <div class="popup-content">
-            <button id="close-popup" aria-label="Fechar devocional">×</button>
-            <h2 id="popup-title">Filipenses 4</h2>
-            <p id="popup-reflexao">
-                Você pode enfrentar qualquer coisa com a força que vem do Senhor. <br /><br />
-                O capítulo 4 de Filipenses nos lembra da importância da fé, da paz e da gratidão, mesmo em momentos difíceis.
-            </p>
-            <p id="popup-oracao"><strong>Oração:</strong> Senhor, fortalece minha fé e me ajuda a confiar em Ti em todos os momentos.</p>
-            <a href="https://www.bibliaonline.com.br/fil/4" target="_blank" rel="noopener noreferrer" class="btn-leitura">Ler capítulo completo</a>
-        </div>
+  <!-- POP-UP DEVOCIONAL -->
+  <div id="popup-devocional" class="popup hidden" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-desc">
+    <div class="popup-content">
+      <button id="close-popup" aria-label="Fechar devocional">×</button>
+      <h2 id="popup-title">Filipenses 4</h2>
+      <p id="popup-reflexao">
+        Você pode enfrentar qualquer coisa com a força que vem do Senhor. <br /><br />
+        O capítulo 4 de Filipenses nos lembra da importância da fé, da paz e da gratidão, mesmo em momentos difíceis.
+      </p>
+      <p id="popup-oracao"><strong>Oração:</strong> Senhor, fortalece minha fé e me ajuda a confiar em Ti em todos os momentos.</p>
+      <a href="https://www.bibliaonline.com.br/fil/4" target="_blank" rel="noopener noreferrer" class="btn-leitura">Ler capítulo completo</a>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
