@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(90, 84, 72); /* Cor 4 */
+    background-color: rgb(90, 84, 72); /* Cor 4 - marrom escuro */
     color: white;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
 /* TOPO */
 .topo {
-    background-color: rgb(79, 130, 113); /* Cor 2 */
+    background-color: rgb(79, 130, 113); /* Cor 2 - verde escuro */
     padding: 60px 20px 40px;
     text-align: center;
 }
@@ -18,21 +18,21 @@ body {
     margin: 0;
     font-size: 2.5em;
     font-weight: 600;
-    color: rgb(246, 206, 22); /* Cor 1 */
+    color: rgb(246, 206, 22); /* Cor 1 - amarelo dourado */
 }
 
 .versiculo {
     margin-top: 20px;
     font-size: 1.1em;
     font-style: italic;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 .boas-vindas {
     margin-top: 10px;
     font-size: 1.2em;
     font-weight: 500;
-    color: rgb(81, 194, 198); /* Cor 3 */
+    color: rgb(81, 194, 198); /* Cor 3 - azul piscina */
 }
 
 /* BOTÃO MENU */
@@ -40,8 +40,8 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: rgb(246, 206, 22); /* Cor 1 */
-    color: rgb(90, 84, 72); /* Cor 4 */
+    background-color: rgb(246, 206, 22); /* Cor 1 - amarelo dourado */
+    color: rgb(90, 84, 72); /* Cor 4 - marrom escuro */
     border: none;
     font-size: 24px;
     padding: 10px 15px;
@@ -57,7 +57,7 @@ body {
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: rgb(90, 84, 72); /* Cor 4 */
+    background-color: rgb(90, 84, 72); /* Cor 4 - marrom escuro */
     padding: 20px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
     z-index: 1000;
@@ -81,7 +81,7 @@ body {
 
 .sidebar a {
     text-decoration: none;
-    color: rgb(81, 194, 198); /* Cor 3 */
+    color: rgb(81, 194, 198); /* Cor 3 - azul piscina */
     font-size: 1.1em;
     font-weight: bold;
 }
