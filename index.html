@@ -32,7 +32,7 @@
 
     <!-- DEVOCIONAL -->
     <section id="devocional" class="devocional">
-        <div class="devocional-box" id="devocional-box">
+        <div class="devocional-box" id="devocional-box" tabindex="0" role="button" aria-pressed="false">
             <span class="cruz">✝️</span>
             <div>
                 <p class="versiculo-curto" id="versiculo-curto">"Tudo posso naquele que me fortalece." — Filipenses 4:13</p>
@@ -42,21 +42,25 @@
         </div>
     </section>
 
-    <!-- POPUP DEVOCIONAL -->
-    <div id="popup-devocional" class="popup hidden">
+    <!-- POP-UP DEVOCIONAL DETALHADO -->
+    <div id="popup-devocional" class="popup hidden" role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-desc">
         <div class="popup-content">
-            <button id="close-popup" class="close-popup">×</button>
-            <h2>Devocional do Dia</h2>
-            <p class="versiculo-popup" id="versiculo-popup">"Tudo posso naquele que me fortalece." — Filipenses 4:13</p>
-            <p class="reflexao-popup" id="reflexao-popup">
-                Você pode enfrentar qualquer coisa com a força que vem do Senhor. Confie e descanse no cuidado divino todos os dias.
+            <button id="close-popup" aria-label="Fechar devocional">×</button>
+            <h2 id="popup-title">Filipenses 4</h2>
+            <p id="popup-reflexao">
+                Você pode enfrentar qualquer coisa com a força que vem do Senhor. <br /><br />
+                O capítulo 4 de Filipenses nos lembra da importância da fé, da paz e da gratidão, mesmo em momentos difíceis.
             </p>
-            <p class="oracao-popup" id="oracao-popup">
-                Senhor, fortalece-me para que eu possa enfrentar os desafios com fé e coragem. Que eu seja instrumento do teu amor e paz.
-            </p>
-            <a id="link-capitulo" href="https://www.bibliaonline.com.br/nvi/filipenses/4" target="_blank" class="botao-capitulo">Ler capítulo completo</a>
+            <p id="popup-oracao"><strong>Oração:</strong> Senhor, fortalece minha fé e me ajuda a confiar em Ti em todos os momentos.</p>
+            <a href="https://www.bibliaonline.com.br/fil/4" target="_blank" rel="noopener noreferrer" class="btn-leitura">Ler capítulo completo</a>
         </div>
     </div>
+
+    <!-- FORMULÁRIO PEDIDOS DE ORAÇÃO -->
+    <section class="formulario">
+        <h2>Pedidos de Oração</h2>
+        <iframe src="https://docs.google.com/forms/d/e/VP6sKbCb38VL24Yp8/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </section>
 
     <script src="script.js"></script>
 </body>

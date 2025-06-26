@@ -1,4 +1,3 @@
-// Menu lateral continua o mesmo
 const openMenu = document.getElementById('open-menu');
 const closeMenu = document.getElementById('close-menu');
 const sidebar = document.getElementById('sidebar');
@@ -17,23 +16,25 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Devocional pop-up
-
+// Devocional popup
 const devocionalBox = document.getElementById('devocional-box');
 const popup = document.getElementById('popup-devocional');
 const closePopup = document.getElementById('close-popup');
 
 devocionalBox.addEventListener('click', () => {
     popup.classList.remove('hidden');
+    devocionalBox.setAttribute('aria-pressed', 'true');
 });
 
 closePopup.addEventListener('click', () => {
     popup.classList.add('hidden');
+    devocionalBox.setAttribute('aria-pressed', 'false');
 });
 
 // Fecha popup se clicar fora do conteúdo
 popup.addEventListener('click', (e) => {
     if (e.target === popup) {
         popup.classList.add('hidden');
+        devocionalBox.setAttribute('aria-pressed', 'false');
     }
 });
